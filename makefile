@@ -1,6 +1,7 @@
 
 pdf:clean 
 	docker run --interactive --tty --mount type=bind,source=.,target=/tcc2 --workdir=/tcc2 --rm andrelanna/texlivefull pdflatex tcc.tex
+	docker run --interactive --tty --mount type=bind,source=.,target=/tcc2 --workdir=/tcc2 --rm andrelanna/texlivefull bibtex   tcc.aux
 	docker run --interactive --tty --mount type=bind,source=.,target=/tcc2 --workdir=/tcc2 --rm andrelanna/texlivefull pdflatex tcc.tex
 	docker run --interactive --tty --mount type=bind,source=.,target=/tcc2 --workdir=/tcc2 --rm andrelanna/texlivefull pdflatex tcc.tex
 
