@@ -2,18 +2,18 @@
 
 \section{Engenharia de Software}
 
-A Engenharia de Software é uma disciplina de Engenharia que visa apoiar o desenvolvimento de produtos de software no âmbito profissional, que aplicamos também no mundo acadêmico. Tal estudo não considera apenas código, mas todo o ambiente de documentação e configuração necessário para o funcionamento de um sistema, dado que , um sistema real, muitas vezes é compostos por diversos programas menores, junto com seus arquivos de configuração \cite{Sommerville2007}. Isso é especialmente verdade no Agromart, que hoje em dia é composto de um Aplicativo Mobile, uma API dicionário, e uma API com os dados da CSA, cada um com diferentes tecnologias empregas e arquivos de configuração.
+A Engenharia de Software é uma disciplina de Engenharia que visa apoiar o desenvolvimento de produtos de software no âmbito profissional, que aplicamos também no mundo acadêmico. Tal estudo não considera apenas código, mas todo o ambiente de documentação e configuração necessário para o funcionamento de um sistema, dado que um sistema real, muitas vezes é composto por diversos programas menores, junto com seus arquivos de configuração \cite{Sommerville2007}. Isso é especialmente verdade no Agromart, que hoje em dia é composto de um aplicativo móvel, uma API dicionário, e uma API principal com os dados da CSA, cada um com diferentes tecnologias empregadas e arquivos de configuração.
 
-Por ser uma disciplina da engenharia, e sendo o foco da engenharia a solução de problemas, não seria diferente para Engenharia de Software, sendo assim, naturalmente serão abordados todos os aspectos da produção do Software, incluindo todo o ciclo de vida do produto \cite{Sommerville2007}.
+Por ser uma disciplina da engenharia, e sendo o foco da engenharia a solução de problemas, não seria diferente na Engenharia de Software, sendo assim, ela abrange todos os aspectos da produção do Software, incluindo todo o ciclo de vida do produto \cite{Sommerville2007}.
 
 \subsection{Importância da Engenharia de Software}
-Frequentemente, a utilização de métodos e técnicas da Engenharia de Software para o desenvolvimento de sistemas é mais economicamente viável a longo prazo em comparação com a abordagem de escrever código  como se fossem projetos pessoais. Em muitos casos, boa parte dos custos estão associados às alterações e correções no software após o início da sua implementação \cite{Sommerville2007}. No caso do Agromart que já está sendo desenvolvido há aproximadamente quatro anos, podemos pensar em termos de tempo gasto no projeto em vez de dinheiro, sendo assim a Engenharia de Software uma ferramenta ponderosa para aumentar a eficiência dos colaboradores do projeto.
+Frequentemente, a utilização de métodos e técnicas da Engenharia de Software para o desenvolvimento de sistemas é mais economicamente viável a longo prazo em comparação com a abordagem de escrever código como se fossem projetos pessoais. Em muitos casos, boa parte dos custos estão associados às alterações e correções no software após o início da sua implementação \cite{Sommerville2007}. No caso do Agromart que já está sendo desenvolvido há aproximadamente quatro anos, podemos pensar em termos de tempo gasto no projeto em vez de dinheiro, sendo assim a Engenharia de Software uma ferramenta poderosa para aumentar a eficiência dos colaboradores do projeto.
 
 \subsection{Diferença entre engano, erro, defeito e falha}
-De acordo com \citeauthor[p. 207]{Sommerville2007}, é essencial compreender a distinção entre erros de usuário, erros de sistema, defeitos e falhas no contexto de sistemas de software.
+De acordo com \citeauthor{Sommerville2007} [p. 207], é essencial compreender a distinção entre erros de usuário, erros de sistema, defeitos e falhas no contexto de sistemas de software.
 
 \begin{itemize}
-    \item \textbf{Engano:} É o comportamento humano que resulta na introdução de defeitos em um sistema. Por exemplo problemas de lógica que vão causar defeitos no sistema em casos específicos.
+    \item \textbf{Engano:} É o comportamento humano que resulta na introdução de defeitos em um sistema. Por exemplo, problemas de lógica que vão causar defeitos no sistema em casos específicos.
 
     \item \textbf{Defeito de sistema:} Uma característica do software que pode levar a um erro de sistema. É causado por um engano humano.
     
@@ -30,39 +30,32 @@ De acordo com \citeauthor{Sommerville2007}, numa abordagem sistemática de engen
 \begin{enumerate}
     \item Especificação de software, onde há trabalho em conjunto entre clientes e engenheiros para definir qual software a ser produzido e as restrições de sua operação.
     \item Desenvolvimento de software, em que o software é programado a partir dos requisitos elicitados na atividade anterior.
-    \item Validação de software, que compreende entender se o software construído e entendido pelos desenvolvedores é o software é o que o cliente estava imaginando, ou em outras palavras, se o que foi feito está de acordo com o que o cliente tinha em mente.
-    \item Evolução de software, em que o software sobre manutenção e modificações de acordo com problemas encontrados, desejo do cliente, bem como mudanças do mercado e de tecnologias.
+    \item Validação de software, que compreende entender se o software construído é o software é o que o cliente estava imaginando, ou em outras palavras, se o que foi feito está de acordo com o que o cliente tinha em mente.
+    \item Evolução de software, em que o software sofre manutenção e modificações de acordo com problemas encontrados, desejo do cliente, bem como mudanças do mercado e de tecnologias.
 \end{enumerate}
 
 No Agromart, até por sua característica \textit{open-source}, não há um cliente específico, onde quem desempenhou o papel de cliente até então foram os próprios contribuidores e desenvolvedores do projeto.
 
 \subsection{Evolução de Software}
-Alterações em código fonte de software não cessam quando o sistema é entregue e continuam por toda a vida útil do sistema. Isso quer dizer que, qualquer software que ainda está sendo utilizado, sofrera naturalmente modificações mesmo após seu desenvolvimento inicial. 
+Alterações em código fonte de software não cessam quando o sistema é entregue e continuam por toda a vida útil do sistema. Isso quer dizer que, qualquer software que ainda está sendo utilizado, sofrerá naturalmente modificações mesmo após seu desenvolvimento inicial. 
 
-\citeauthor[p. 170]{Sommerville2007} chama o processo geral de alterações em sistema após sua liberação inicial de manutenção de software, destacando três diferentes tipos de manutenção:
+\citeauthor{Sommerville2007} chama o processo geral de alterações em sistema após sua liberação inicial de manutenção de software, destacando três diferentes tipos de manutenção:
 
 \begin{enumerate}
-    \item A correção de defeitos envolve a correção de defeitos, erros e falhas que foram introduzidos através de enganos ou de fatores externos, esses defeitos geralmente são expostos através de falhas que os usuários identificam usando o sistema.
-    \item Adaptação ambiental. Esse tipo de manutenção é necessário quando algum aspecto do ambiente do sistema como hardware, sistema operacional ou outro software de apoio sofre uma mudança. Um exemplo do que podemos considerar software de apoio são as bibliotecas instaladas no sistema que consistem em conjunto de funções, classes ou outros componentes pré-escritos e empacotados de forma que pode-se incorporá-las ao sistema. O sistema deve ser modificado para se adaptar a essas mudanças de modo a oferecer um experiência sempre satisfatória ao usuário.
-    \item Adição de funcionalidade. Esse tipo de manutenção ocorre quando os requisitos de sistema mudam, adicionando novas regras de negocio ou alterando regras existentes.
+    \item A correção de defeitos envolve o conserto de defeitos, erros e falhas que foram introduzidos através de enganos ou de fatores externos, esses defeitos geralmente são expostos através de falhas que os usuários identificam usando o sistema.
+    \item Adaptação ambiental. Esse tipo de manutenção é necessário quando algum aspecto do ambiente do sistema como hardware, sistema operacional ou outro software de apoio sofre uma mudança. Um exemplo do que podemos considerar software de apoio são as bibliotecas instaladas no sistema que consistem em conjunto de funções, classes ou outros componentes pré-escritos e empacotados de forma que pode-se incorporá-las ao sistema. O sistema deve ser modificado para se adaptar a essas mudanças de modo a oferecer uma experiência sempre satisfatória ao usuário.
+    \item Adição de funcionalidade. Esse tipo de manutenção ocorre quando os requisitos de sistema mudam, adicionando novas regras de negócio ou alterando regras existentes.
 \end{enumerate}
 
-Este trabalho foca principalmente na evolução do software Agromart, mais especificamente na manutenção do sistema, atuando diretamente na correção de defeitos e adaptação ambiental.
+Este trabalho foca principalmente na evolução do software Agromart, mais especificamente na manutenção do sistema, atuando diretamente na correção de defeitos encontrados antes e depois da unificação do sistema e na adaptação ambiental.
 
-A adaptação ambiental foi extremamente necessária no Agromart, especialmente no aplicativo móvel, onde o ecossistema baseado no \textit{React Native} e Expo evolui rapidamente, juntamente com as diversas bibliotecas utilizadas. Uma parte considerável desses softwares de apoio já se encontravam depreciados ou até mesmo com versões incompatíveis causando diversos problemas com o sistema. Tal adaptação ambiental, no caso do Agromart, está também diretamente ligada à correção de defeitos, já que muitos defeitos foram resolvidos simplesmente por fazer atualizações e melhorias no software de apoio do sistema.
+A adaptação ambiental foi extremamente necessária no Agromart, especialmente no aplicativo móvel, onde o ecossistema baseado no \textit{React Native} e Expo evolui rapidamente, juntamente com as diversas bibliotecas utilizadas. Uma porcentagem considerável desses softwares de apoio já se encontrava depreciada ou até mesmo com versões incompatíveis causando diversos problemas com o sistema. Tal adaptação ambiental, no caso do Agromart, está também diretamente ligada à correção de defeitos, já que muitos defeitos foram resolvidos simplesmente por fazer atualizações e melhorias no software de apoio do sistema.
 
 \section{Metodologia Ágil}
 A metodologia ágil surgiu como uma abordagem que visava reduzir o retrabalho e a lentidão de metodologias mais tradicionais em caso de mudanças nos requisitos, permitindo que as equipes focassem mais no Software \cite{Sommerville2007}.
-Este trabalho se beneficiou da metodologia ágil dada a imprevisibilidade de possíveis problemas a integração das \textit{branches} e das funcionalidades do Agromart, uma vez que não possuíamos conhecimento do código fonte do sistema e nem exatamente quais os erros, falhas e defeitos encontraríamos pelo caminho.
+Este trabalho se beneficiou da metodologia ágil dada a imprevisibilidade de possíveis problemas na integração das \textit{branches} e das funcionalidades do Agromart, uma vez que não possuíamos conhecimento do código fonte do sistema e nem exatamente quais os erros, falhas e defeitos encontraríamos pelo caminho.
 
 \section{\textit{Open-Source}}
 O código aberto, ou \textit{open-source}, refere-se a uma abordagem de desenvolvimento de software em que o código-fonte é disponibilizado publicamente, permitindo que qualquer pessoa o visualize, modifique e distribua de acordo com diretrizes específicas.\cite{opensource2023} O \textit{open-source} tem como vantagem a transparência do código, que permite uma colaboração ampla de desenvolvedores externos, resultando em soluções com mais inovações e qualidade. Isso também significa que erros e problemas de segurança podem ser identificados e corrigidos rapidamente pela comunidade. 
 
 No contexto do Agromart, o caráter \textit{open-source} da aplicação é fundamental para a plena realização dos seus objetivos iniciais, de se tornar uma ferramenta útil para facilitar as relações de agricultores e co-agricultores no modelo de CSA. Para isso é necessário que o projeto tenha cada vez mais independência do contexto da universidade, tendo a possibilidade de receber contribuições externas e da formação de uma comunidade para a manutenção da aplicação.
-
-
-
-
-
-
-

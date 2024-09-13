@@ -13,7 +13,7 @@ O Amazon EC2 (Elastic Compute Cloud) é um serviço de computação em nuvem da 
 A principal razão para a escolha da EC2 na realização do deploy dos servidores foi a flexibilidade que o serviço oferece para modificar os recursos da instância alocada. Sem saber inicialmente quanto recurso seria necessário para o bom funcionamento do Agromart, a escolha de uma opção que permitisse a fácil manipulação dos recursos computacionais foi fundamental.
 
 \section{Processo de deploy do servidores}
-Levando em conta as necessidades listadas, foi alocada uma instância EC2 na AWS para disponibilizar a API Dicionário e o Backend do Agromart. A instância EC2 selecionada possui as seguintes características: tipo de instância t3.medium, com 2 vCPUs, 4 GB de memória RAM, e um volume de armazenamento de 30 GB em um SSD como visto na Fig. \ref{ec2}. O sistema operacional escolhido foi o Linux, e a instância foi alocada na região da AWS da Virgínia do Norte (us-east-1).
+Levando em conta as necessidades listadas, foi alocada uma instância EC2 na AWS para disponibilizar a API Dicionário e o Backend do Agromart. A instância EC2 selecionada possui as seguintes características: tipo de instância t3.medium, com 2 vCPUs, 4 GB de memória RAM, e um volume de armazenamento de 30 GB em um SSD como visto na Figura \ref{ec2}. O sistema operacional escolhido foi o Linux, e a instância foi alocada na região da AWS da Virgínia do Norte (us-east-1).
 
 Adicionalmente, também foram criados snapshots do volume para recuperar o estado dos servidores em caso de falha. A configuração foi realizada com o objetivo de balancear adequadamente o custo e o desempenho.
 
@@ -28,7 +28,7 @@ Adicionalmente, também foram criados snapshots do volume para recuperar o estad
 Para a preparação do banco de dados, foi utilizado o SGBD PostgreSQL. A imagem oficial do PostgreSQL foi usada para criar o banco de dados em um ambiente Docker. Essa abordagem foi escolhida por ser uma forma rápida de instalar e rodar o banco de dados no servidor.
 
 \subsection{Aquisição de Domínio}
-Um domínio foi essencial para conseguirmos um certificado SSL válido, que por sua vez é necessário para que possamos habilitar o HTTPS em nosso servidores. O domínio foi comprado através da plataforma Hostinger, e seu endereço é agromarttcc.shop, por um prazo de 1 ano, conforme apresentado na Fig. \ref{dominio}. 
+Um domínio foi essencial para conseguirmos um certificado SSL válido, que por sua vez é necessário para que possamos habilitar o HTTPS em nosso servidores. O domínio foi comprado através da plataforma Hostinger, e seu endereço é agromarttcc.shop, por um prazo de 1 ano, conforme apresentado na Figura \ref{dominio}. 
 
 \begin{figure}[h]
 	\centering
