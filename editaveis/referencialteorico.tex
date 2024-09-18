@@ -49,7 +49,12 @@ Alterações em código fonte de software não cessam quando o sistema é entreg
 
 Este trabalho foca principalmente na evolução do software Agromart, mais especificamente na manutenção do sistema, atuando diretamente na correção de defeitos encontrados antes e depois da unificação do sistema e na adaptação ambiental.
 
-A adaptação ambiental foi extremamente necessária no Agromart, especialmente no aplicativo móvel, onde o ecossistema baseado no \textit{React Native} e Expo evolui rapidamente, juntamente com as diversas bibliotecas utilizadas. Uma porcentagem considerável desses softwares de apoio já se encontrava depreciada ou até mesmo com versões incompatíveis causando diversos problemas com o sistema. Tal adaptação ambiental, no caso do Agromart, está também diretamente ligada à correção de defeitos, já que muitos defeitos foram resolvidos simplesmente por fazer atualizações e melhorias no software de apoio do sistema.
+A adaptação ambiental foi extremamente necessária no Agromart, especialmente no aplicativo móvel, onde o ecossistema baseado no React Native e Expo evolui rapidamente, juntamente com as diversas bibliotecas utilizadas. Uma porcentagem considerável desses softwares de apoio já se encontrava depreciada ou até mesmo com versões incompatíveis causando diversos problemas com o sistema. Tal adaptação ambiental, no caso do Agromart, está também diretamente ligada à correção de defeitos, já que muitos defeitos foram resolvidos simplesmente por fazer atualizações e melhorias no software de apoio do sistema.
+
+\section{Testes de caixa preta}
+Uma das abordagens mais comuns para testes de software são os teste de caixa preta. A técnica consiste em testar o sistema sem se importar com detalhes de sua implementação ou detalhes internos, mas apenas com a camada mais exterior do programa, a que é utilizada pelo usuário final, focando completamente no comportamento do software em suas interações com o usuário. O objetivo é identificar situações em que o programa não se comporta de acordo com seus requisitos \cite{Myers2012}.
+
+Os testes de caixa preta foram especificamente eficientes neste trabalho para identificação de falhas, onde o foco foi em utilizar o sistema e identificar os pontos de falha sem necessariamente olhar para implementação do código-fonte. Dessa maneira torna-se mais fácil a tarefa de localizar defeitos de código, uma vez identificados quais os componentes do sistema em estado de falha.
 
 \section{Metodologia Ágil}
 A metodologia ágil surgiu como uma abordagem que visava reduzir o retrabalho e a lentidão de metodologias mais tradicionais em caso de mudanças nos requisitos, permitindo que as equipes focassem mais no Software \cite{Sommerville2007}.
